@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purva Fitness </title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@600&family=Oswald:wght@200&family=Roboto&family=Ubuntu:wght@300;400&display=swap"
+        rel="stylesheet">
+
+</head>
+<!-- <link rel="stylesheet" href="css/style.css"> -->
+<style>
+    body {
+        margin:auto;
+        padding:auto;
+        background-image: url('img/bg.JPG');
+        height: 100vh;
+        background-size: cover;
+        font-family: 'Baloo Bhaijaan 2', cursive;
+    }
+
+    .left {
+        /* border: 2px solid white; */
+        margin: auto;
+        padding: auto;
+        display: inline-block;
+        position: absolute;
+        left: 32px;
+        top: 12px;
+        width: 10%;
+
+    }
+
+    .centre {
+        /* border: 2px solid rgb(230, 30, 97); */
+        margin: 10px;
+        border-radius: 10px;
+        padding: 10px;
+        display: block;
+        margin: 10px auto;
+        width: 33%;
+
+        position: absolute;
+        top: 12px;
+        left: 530px;
+        right: 530px;
+        list-style: none;
+        float: left;
+    }
+
+    .right {
+        /* border: 2px solid burlywood; */
+        margin: 3px;
+        padding: 0px;
+        display: inline-block;
+        position: absolute;
+        right: 32px;
+        top: 12px;
+        width: 13%;
+    }
+
+    .navbar {
+        margin: auto;
+
+    }
+
+    .navbar li {
+        display: inline-block;
+
+
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        font-family: 'Roboto', sans-serif;
+
+    }
+
+    .navbar li a:hover,
+    .navbar li a:active {
+        color: purple;
+        text-decoration: underline;
+
+    }
+
+    .left img {
+        filter: invert(100%);
+        width: 40%;
+        padding: 0px 7px;
+        margin: 0px;
+
+
+    }
+
+    .name {
+        color: white;
+        font-family: sans-serif;
+        text-align: left;
+        font-size: 14px;
+        padding: 0px 0px;
+    }
+
+    .btn {
+        margin: 11px;
+        padding: 1px 8px;
+        background-color: wheat;
+        color: rgb(240, 14, 52);
+        border: 2px solid grey;
+        border-radius: 14px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        border: rgb(230, 30, 97);
+        color: royalblue;
+    }
+
+    .container {
+        border: 2px solid white;
+        width: 400px;
+        height: 600px;
+        border-radius: 8px;
+        margin: 100px 90px;
+        padding: 10px 40px;
+        width: 20%;
+        height: auto;
+        color: white;
+
+
+
+
+    }
+
+    .form-group input {
+        text-align: center;
+        margin: 8px;
+        padding: 5px;
+        display: block;
+        border: 2px solid black;
+        border-radius: 6px;
+        font-family: 'Baloo Bhaijaan 2', cursive;
+        font-size: 14px;
+
+    }
+
+    .container button {
+        display: block;
+        color: black;
+        background-color: blanchedalmond;
+        border-radius: 5px;
+        align-items: center;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="img\logo.JPG" alt="">
+               
+            <div class="name">
+                Purva Fitness
+            </div>
+
+        </div>
+        <div class="centre">
+            <ul class="navbar">
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Fitness Calculator</a></li>
+                <li><a href=""> Contact Us</a></li>
+
+            </ul>
+
+
+        </div>
+        <div class="right">
+            <button class="btn">Email </button>
+            <button class="btn">Call Now</button>
+
+        </div>
+
+
+    </header>
+    <div class="container">
+        <h1>Join the best Gym in Dhule Now!!</h1>
+        <form action="login.php" method="post">
+            <!-- <div class="form-group">
+                <input type="text" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your age" required>
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Mob no" required>
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your weight" required>
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your email i'd" required>
+            </div>
+            <button class="btn"> <a href="login.html">Submit</a></button> -->
+            <table border="0" bgcolor="black" align="center" cellspacing="10" class="table">
+                <tbody>
+                    <tr><td>First Name</td>
+                    <td><input type="text" name="fname" placeholder="First Name" required></td></tr>
+                    <tr><td>Last Name</td>
+                        <td><input type="text" name="lname" placeholder="Last Name" required></td></tr>
+                    <tr><td>Email Address</td>
+                            <td><input type="text" name="eadd" placeholder="Email Address" required></td></tr>
+                  <tr><td>Password</td>
+                                <td><input type="password" name="pass" placeholder="Password" required></td></tr>
+                                <tr><td>Confirm Password</td>
+                                    <td><input type="password" name="cpass" placeholder="Confirm Password" required></td></tr>
+                                    <tr><td>Gender</td>
+                                    <td><input type="radio" name="r1" value="Male" required>"Male"<input type="radio" name="r1" value="Female" required>"Female"</td></tr>
+                <tr>
+                    <!-- <td colspan="2" align="center"><a href="login.html"><input type="submit" class="btn"></a></td> -->
+                 <td>  <button class="btn"> Submit</button> 
+                 </td>  </tr>
+        
+    
+                </tbody>
+            </table>
+        </form>
+
+    </div>
+    
+</body>
+
+</html>
